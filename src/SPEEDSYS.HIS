@@ -1,0 +1,422 @@
+
+History of System Speed Test:
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Version 2.00
+~~~~~~~~~~~~~
+ - First public release.
+
+Version 2.02
+~~~~~~~~~~~~~
+ - Modified a graphing of memory system.
+ - Corrected error in the scale with the step 200 KB.
+ - Changed algorithm of determination a caches of processor.
+ - Added determination free XMS memory.
+ - Corrected error by the incorrect determination IDE/ATA parameters.
+ - Added possibility, skip a test of velocity addressing to
+   the block of memory.
+ - Corrected error in processing the parameters of command line.
+
+Version 2.05
+~~~~~~~~~~~~~
+ - Corrected error connected with the wrong determination
+   of processor Intel Pentium(tm) OverDrive(tm).
+ - Corrected error (???) incorrect functioning with video card ATI MACH64.
+ - Now program can work at the non-observance of system requirement
+   and from Windows'95 (98).
+ - Changed algorithm and corrected error appearing at impossibility
+   to define a seek time of hard disk, has when working with
+   some SCSI comptrollers or wrong installation in BIOS.
+ - Changed an algorithm of determination of the processor frequency.
+ - Eliminated starvation in an effort start on 80286 processors.
+ - Eliminated several small errors.
+
+Version 3.00
+~~~~~~~~~~~~~
+ - Now this only English version of SYSTEM SPEED TEST.
+ - Nearly completely remade a procedure of determination of processor.
+ - Added determination Cyrix processors by the method 5/2.
+ - Added determination of processors AMD K6-3D, K6+3D, IDT WinChipC6.
+ - Changed output of comparative results.
+ - Small a change and addition.
+
+Version 3.10
+~~~~~~~~~~~~~
+ - Processor K6-3D now is identified K6-2(tm).
+ - Now, by default, is executed quick test of read speed
+   from the hard disk.  Full test will be executed with the key <T2>.
+   Comparative results are removed for the full test.
+ - Changed algorithm of determination of mean time of positioning
+   a hard disk.
+ - Added determination of maximum time of positioning a hard disk.
+ - Removed a conservation of screen in PCX file taken from
+   PCX Programmer's Toolkit 3.56 (c) Genus Microprogramming, Inc.
+   (14KB with the whole library). My version this uses 370 bytes.
+ - Added possibility of automatic creation PCX file after terminating
+   or canceling the tests when striking on the key <P>.
+   Created file on the current disk with the name "sstimgXX".
+ - Changed determination of the processor benchmark. Added 32-bit code.
+ - As usually - a small change and addition.
+
+Version 3.15
+~~~~~~~~~~~~~
+ - Processor AMD K6+3D now is identified AMD K6-3(tm).
+ - Added determination of processors: Intel Celeron(tm), NexGen Nx586.
+ - Corrected error in the determination 80386SX processors.
+ - Added determination of memory >64MB.
+ - Changed algorithm determination of Memory Speed Index
+   and leveled to 100.00 for EDO DRAM on the charge ASUSTEK TXP4 rev1.02,
+   processor Intel PentiumMMX(tm)- 200 MHz and installation BIOS by default.
+ - Changed algorithm of determination of processor frequency
+   because of the wrong determination for the processor
+   Intel Pentium II(tm).
+ - Changed algorithm of determination of sizes a data cache and speed
+   features a cache and memory because of the wrong determination
+   for the processor Intel Pentium II(tm).
+ - Added graph of moving the blocks in memory.
+ - Added determination type of memory for BIOS supporting DMI2.0+
+ - Added determination of external processor frequency for BIOS
+   supporting DMI2.0+
+ - Changed algorithm of determination IDE ATA/ATAPI devices because
+   of the starvation on some computers and wrong determination
+   at presence SCSI disks.
+ - Added determination processor support of technology AMD 3DNow!
+ - Some changes.
+
+Version 3.17
+~~~~~~~~~~~~~
+ - Eliminated error connected with the wrong output frame of system
+   parameters.
+ - Added determination a random access time of hard disk.
+ - Added several BIOS vendors.
+
+Version 3.18
+~~~~~~~~~~~~~
+ - Changed a calculation method of Average Seek Time.
+ - Changed a calculation method of relative HDD speed.
+   Now is Linear Read Speed/ Random Access Time.
+ - Some additions and changes.
+
+Version 3.20
+~~~~~~~~~~~~~
+ - Added detection PCI device information. Defined more than 1000 devices.
+   It is available on keystroke <I> after canceling or completing
+   the tests.
+ - Fixed memory size detection.
+ - Fixed memory type detection.
+ - Size of memory is now displayed in Mbytes.
+ - Fixed AMD K6(tm) clocks rate.
+ - Fixed AMD 3DNow! technology detection.
+ - Removed detection AMD 3DNow!(tm) technology for Intel processors. :-)
+ - Clock rate of processors is now defined via Time Stamp Counter if
+   this possible.
+ - Added detection of PCI display adapter instead of VESA OEM string
+   if it is found in PCI devices list.
+ - Some additions and changes.
+
+Version 3.21
+~~~~~~~~~~~~~
+ - Fixed PCI device detection.
+ - Changed determination of the processor benchmark.
+ - Added Intel Pentium(R)II Xeon(tm) processor.
+ - Now, possible skipping executable test (press <Space> ).
+ - Added WindowsNT(tm) detection.
+ - Fixed and optimized on memory-timing test. Added new graph.
+ - Some minor updates.
+
+Version 3.22
+~~~~~~~~~~~~~
+ - Fixed BIOS detection.
+ - Added processors: Celeron(tm) A, Rise mP6(tm),
+                     IDT WinChip 2(tm), IDT WinChip 3(tm).
+ - Added new PCI devices.
+ - Added RTC-BIOS Year2000 bug detection.
+ - New ATAPI device driver (Oak Technology Inc.) in the package.
+
+Version 3.23
+~~~~~~~~~~~~~
+ - Minor bug fixed.
+ - Added detection new Cyrix processors for method 5/2.
+
+Version 3.24
+~~~~~~~~~~~~~
+ - Fixed memory size detection.
+ - Removed access to HMS memory by means of HIMEM.SYS.
+   Now there is not needed to load HIMEM.SYS (Thanks to wbinvd).
+ - New test of video memory speed (testing in VESA 101h- 105h).
+ - Added a time stamp of testing in PCX images.
+
+Version 4.00
+~~~~~~~~~~~~~
+ - Added detection a model (IDE/E-IDE) of hard drive in system window.
+ - Information on the size a cache are carried in memory-timing test.
+ - Added window of drive selection. Now possible not to use a command
+   line for drive selection and parameters of testing.
+ - Added testing of extended memory on errors and malfunction.
+ - Added new keys: ? - Help (Only keys of command line).
+                   L - Loop test of memory.
+ - Added detection of processors: Intel Pentium(tm) III,
+                                  Intel Pentium(R) III Xeon(tm).
+Version 4.10
+~~~~~~~~~~~~~
+ - Added detection ISA PnP devices (Thanks to Roman Bryguin).
+ - Added detection of processors: IDT WinChip 4(tm), AMD K7(tm),
+                                  Rise mP6 II(tm).
+ - Added new PCI devices.
+ - Some bug fixed.
+
+Version 4.11
+~~~~~~~~~~~~~
+ - Some bug fixed.
+ - Corrected memory-timing test for size of caches >2MB.
+ - Added new keys: SP - Skip PnP devices detection.
+
+Version 4.20
+~~~~~~~~~~~~~
+ - Added info about memory modules. Detection: type, size,
+   manufacturer, part number and some features.
+   This requires a DIMM memory module with SPD EEPROM and
+   Intel chipset with PIIX4. It is available on keystroke <M>.
+ - Improved quality of graphs and accuracy of
+   results when working in Windows95/98.
+ - Added report of mainboard model (requires DMI 2.0+ support).
+ - Some changes and bugs fixed.
+
+Version 4.21
+~~~~~~~~~~~~~
+ - Fixed bugs in the report of mainboard model.
+ - Added new PCI devices.
+ - Changed subroutines building of graphics for better compatibility.
+ - Some minor bugs fixed.
+ - AMD-K7 -> AMD-Athlon(tm).
+
+Version 4.22
+~~~~~~~~~~~~~
+ - Fixed bug in the report of memory modules.
+ - Extended PCI device detection. Added analysis Subsys ID and Revision.
+ - Added some PCI devices.
+ - Added report of PCI devices: vendor ID, device ID, revision, subsys ID.
+   Press <I> after geting of PCI device information.
+
+Version 4.23
+~~~~~~~~~~~~~
+ - Some changes and bugs fixed.
+ - Added new PCI devices. Total 2138 devices detection.
+ - New memory test method.
+ - Added support 82801AA, 82801AB SMBus controllers.
+
+Version 4.24
+~~~~~~~~~~~~~
+ - Now report ATA hard drive geometry if this posible.
+ - Added detection DRDRAM (Direct Rambus RDRAM) memory and
+   report some features.
+ - Fixed bug of DMI access.
+ - Added detection PC-DOS, PTS-DOS.
+ - Added detection Award Modular BIOS.
+ - Added new PCI devices.
+ - Added ATAPI device driver AOATAPI.SYS (version V510 AOpen Inc.)
+   in the package for high speed CD drives.
+ - Added detection Intel Itanium(tm) processor.
+ - Added detection PIO and UDMA modes of IDE hard drives.
+ - Added detection cache buffer size and rotation speed
+   of IDE hard drives.
+ - Added SMBus support for VIA 596B, 686A and ALI 7101.
+ - Added SSE (Streaming SIMD Extensions) detection.
+
+Version 4.25
+~~~~~~~~~~~~~
+ - Added new PCI devices.
+ - Added support of hard drives larger than 8.4 GB (using Int 13 extension).
+ - Removed report ATA hard drive geometry if Int 13 Extension supported.
+ - Fixed bug of SMBus access.
+ - Added detection DDR SDRAM/SGRAM of memory and report some features.
+
+Version 4.26
+~~~~~~~~~~~~~
+ - Added detection Windows Millennium.
+ - Added new PCI devices.
+ - Added support AMD-756 SMBus Host.
+ - Added detection clock multiplier (PII/Celeron+, K6-2+).
+
+Version 4.27
+~~~~~~~~~~~~~
+ - Fixed detection Cyrix MII and PentiumIII Xeon processors.
+ - Added new PCI devices.
+ - Added graph of replacing the blocks in memory-timing test.
+ - Added report the cache/memory benchmarks. It is available on
+   keystroke <M> after canceling or completing the tests.
+ - Some minor bugs fixed.
+ - Added new JEDEC Manufacturer's ID.
+
+Version 4.28
+~~~~~~~~~~~~~
+ - Added new PCI devices.
+ - Fixed PC133 memory detection.
+ - Fixed SMBus access for ASUS P3B (Thanks to Konstantin Aleshin).
+ - Fixed detection AMD Athlon clock multiplier.
+ - Added graphs of MMX transfers.
+ - Added MMX Cache/Memory Benchmark.
+ - Added detection SDRAM Access Time and Minimum RAS Pulse Width (Tras).
+ - Some additions and changes.
+
+Version 4.29
+~~~~~~~~~~~~~
+ - Added report codename and process technology of the processors.
+ - Added report AGP Bus version and supported a data transfer rate.
+ - Added report desired data transfer rate of AGP graphics accelerators.
+ - Added new PCI/AGP devices.
+ - Added detection of AMD K6-2+.
+
+Version 4.30
+~~~~~~~~~~~~~
+ - Fixed SMBus support for ALI 7101.
+ - Added detection of VIA Cyrix III.
+ - Added detection VIA Cyrix III clock multiplier.
+ - Added new PCI/AGP devices.
+ - Added detection of AMD K6-III+.
+ - Fixed SMBus support for AMD-756.
+ - Some additions, changes and bugs fixed.
+
+Version 4.50
+~~~~~~~~~~~~~
+ - Added creation a report file (/R switch).
+ - Added detection of AMD Duron(tm) and AMD Atlon(tm)(Thunderbird).
+ - Added new PCI/AGP devices.
+ - Added detection of CPU frequency via TSC from Windows95-98/NT/2000.
+ - Added detection of CPU clock multiplier (via MSR's) from Windows95-98.
+ - Added SMBus support for 82801BA (ICH2).
+ - Added function "Clear CMOS" (/CLCMOS switch).
+ - Added function "Create System BIOS dump file" (/BIOS switch).
+ - Added function "Disable detection type of memory" (/DSPDR switch).
+ - Added new manufacturers from JEP 106-H.
+ - Some additions, changes and bugs fixed.
+
+Version 4.60
+~~~~~~~~~~~~~
+ - Added graph "Linear Verify Speed" for hard disks.
+ - Added detection buffered read speed of hard disks.
+ - Added detection of Transmeta Crusoe(tm).
+ - Enabled SPD access for ASUS P3V4X/K7V/A7V/CUV4X mainboards.
+ - Added new PCI/AGP devices.
+ - Added HDD/CD benchmarks in report file.
+ - Fixed AMD Duron L2 cache size detection.
+ - Added new ATAPI device driver ASUSCD.SYS in the package
+   for high speed CD drives.
+ - Some additions, changes and bugs fixed.
+
+Version 4.61
+~~~~~~~~~~~~~
+ - Added detection of Intel Pentium 4(tm).
+ - Added new PCI/AGP devices.
+ - Added new manufacturers from JEP 106-I.
+ - Added detection 8.5x-12.0x multiplier for Intel CPUs
+  (Thanks to Tamas Miklos).
+ - Some additions and changes.
+
+Version 4.70
+~~~~~~~~~~~~~
+ - Unlocked SPD access for ASUS CUSL2/CUW/MEW/CUC2/CUC2000/CUR mainboards.
+ - Added more PCI and AGP devices.
+ - Added function 'Erase first 128 sectors of hard drive' (/ERHDD switch).
+ - Added new CD drive measurements: 'Random access time', '1/3 seek time',
+   'Full seek time'.
+ - Fixed CD read speed evaluation.
+ - Now reporting Serial Number and Firmware revision  of ATA devices
+   to .TXT file.
+ - Added detection L2 cache latency of Intel CPUs.
+ - CPU cache size and L2 cache latency are shown on main screen.
+ - Detects ATA/ATAPI devices on external PCI IDE controllers.
+ - Added detection of cache buffer size, maximum and selected transfer
+   speed for ATAPI CDROM (some in .TXT report only).
+ - Fixed detection of some ATAPI CD drives.
+ - Added detection of total video memory size for NVidia graphics
+   accelerators.
+ - Added report chipset to main screen.
+
+Version 4.71
+~~~~~~~~~~~~~
+ - Added detection ATA/ATAPI devices from Windows9x/ME.
+ - Added detection Intel Pentium4 clock multiplier.
+ - Unlocked SPD access for ASUS P3C/A7M/A7P mainboards.
+ - Added more PCI and AGP devices.
+ - Some additions, changes and bugs fixed.
+
+Version 4.72
+~~~~~~~~~~~~~
+ - Added more PCI and AGP devices.
+ - Fixed crash in ATA/ATAPI device detection "at port 0".
+ - Added description of PCI devices class codes.
+ - Rename HDD test "Average access time" to "Random
+   access time" cause similarity with Access time testing.
+ - Added calculation of Average access time of HDD.
+ - Added SMBus support for AMD-766, Reliance OSB4, VIA VT8231, SiS 5595B.
+ - Rewrote HDD graphs drawing.
+ - Added sophisticated SPD info analyzing (to .txt report).
+ - Added detection of Intel Pentium III(tm) (Tualatin),
+   Intel Xeon(tm) (Willamette), AMD Athlon 4(tm),
+   AMD Duron(tm) (Morgan) and VIA C3(tm) processors.
+ - Added report of original CPU clock for Intel P2+ processors.
+ - Added detection of microcode update revision for Intel P2+ processors.
+
+Version 4.73
+~~~~~~~~~~~~~
+ - Added more PCI and AGP devices.
+ - Added SMBus support for Intel ICH3, VIA VT8233.
+ - Added detection VIA CyrixIII, VIA C3, Intel PentiumIII-M
+   and AMD Atlon 4 clock multiplier.
+ - Added write test of HDD (/WT switch).
+ - Some additions, changes and bugs fixed.
+
+Version 4.74
+~~~~~~~~~~~~~
+ - Added more PCI and AGP devices.
+ - Added SMBus support for VIA VT8235.
+ - Fixed detection AMD Atlon/Duron clock multiplier.
+ - Added detection selected DMA Transfers.
+ - Added detection Intel Platform ID of P2+ CPU's (to .txt report).
+ - Added new manufacturers from JEP 106-J.
+
+Version 4.75
+~~~~~~~~~~~~~
+ - Added more PCI and AGP devices.
+ - Added detection of Intel Celeron (Tualatin).
+ - Added sophisticated DDR-SDRAM SPD info analyzing (to .txt report).
+ - Added dictionary-based compression of PCI database.
+ - Fixed detection of Intel Pentium 4 clock multiplier.
+ - Added SPD access for ASUS CUEP2/CUSI/A7S/CUPLE mainboards.
+ - Added SMBus support for Intel ICH2-M, VIA VT8233C. (Thanks to Martin Malik)
+ - Fixed detection of original CPU clock of Intel Pentium III (Katmai).
+ - Fixed SMBus support for SiS 5595B.
+
+Version 4.76
+~~~~~~~~~~~~~
+ - Added more PCI and AGP devices.
+ - Added more CPU detection.
+ - Added more CPU clock multiplier detection.
+ - Remove detection Memory Speed Index.
+ - Added detection Memory Peak Bandwidth.
+ - Added more SMBus hosts supported.
+ - Update DDR-SDRAM detection.
+ - Added new manufacturers from JEP 106-K.
+ - Some additions, updates and bugs fixed.
+
+Version 4.77
+~~~~~~~~~~~~~
+ - Added more PCI and AGP devices.
+ - Added more CPU detection.
+ - Added SMBus support for nForce2.
+
+Version 4.78
+~~~~~~~~~~~~~
+ - Added more CPU detection.
+ - Added SMBus support for ICH5.
+ - Added more PCI and AGP devices.
+ - Added "Save As..." for files of report.
+ - Added "Add Comments" for reports.
+ - Added more CPU clock multiplier detection.
+ - Some additions and bugs fixed.
+
+
+Vladimir Afanasiev.
+
+Home page: http://user.rol.ru/~dxover/speedsys
+E-mail   : dxover@email.ru
