@@ -1,0 +1,64 @@
+******************************************************************************
+                ASUSTek CD/DVD-ROM Device Driver V1.50
+******************************************************************************
+
+
+SYNTAX
+======
+                DEVICE = ASUSCD.SYS /D:device_name [/options]
+
+
+OPTIONS
+=======
+
+ /PIO[0~4]      Select PIO Mode 0~4 (Auto Mode if number is omitted)
+
+ /DMA[0~2] or   Select Bus Master DMA Mode 0~2
+ /BM[0~2]       (Auto Mode if number is omitted)
+                If the motherboard does not support Bus Master DMA,
+                The driver will automatic switch to PIO mode.
+
+ /UDMA[0~2]     Select Ultra DMA Mode 0~2
+                (Auto Mode if number is omitted)
+                If the motherboard does not support Ultra DMA,
+                The driver will automatic switch to DMA mode.
+
+ /P:xxx,yy      Select Port Address and IRQ route; xxx = Port, yy = IRQ
+                Example         Port    IRQ
+                -----------------------------
+                Primary         1F0     14
+                Secondary       170     15
+                Tertiary        1E8     11/12
+                Quaternary      168     10/11
+
+
+EXAMPLE
+=======
+                DEVICE = ASUSCD.SYS /D:CD001 /UDMA
+                DEVICE = ASUSCD.SYS /D:MSCD001 /PIO4
+
+
+MOTHERBOARDS AND CHIPSETS SUPPORTED
+===================================
+
+                        IDE         Vendor  Device  Rev.  PIO   DMA   UDMA
+Vendor  Chipset         Controller  ID      ID      ID    Mode  Mode  Mode
+---------------------------------------------------------------------------
+Intel   430TX           PIIX4       8086h   7111h         0~4   0~2   0~2
+        430HX,430VX     PIIX3       8086h   7010h         0~4   0~2
+        430FX           PIIX        8086h   1230h         0~4   0~2
+        82801AA         ICH         8086h   2411h         0~4   0~2   0~2
+        82801AB         ICH         8086h   2421h         0~4   0~2   0~2
+SiS     5597,5598       5597/5598   1039h   5513h   D0h   0~4   0~2   0~2
+        5581,5582       5581/5582   1039h   5513h   D0h   0~4   0~2   0~2
+        5571            5571        1039h   5513h   C0h   0~4   0~2
+        5596/5513       5513        1039h   0597h   B0h   0~4   0~2
+        551X            5513        1039h   5513h   00h   0~4   0~2
+VIA     VP3             VT82C586B   1106h   0571h         0~4   0~2   0~2
+        VP2/97          VT82C586B   1106h   0571h         0~4   0~2   0~2
+        VP2             VT82C586A   1106h   0571h         0~4   0~2   0~2
+        VPX/97          VT82C586B   1106h   0571h         0~4   0~2   0~2
+        VPX             VT82C586A   1106h   0571h         0~4   0~2   0~2
+        VP-1            VT82C586    1106h   1571h         0~4
+        Apollo Master   VT82C576M   1106h   1571h         0~4
+ALI     Alladin M1543   M5229       10B9h   5229h         0~4   0~2   0~2
