@@ -1,0 +1,127 @@
+**********************************************************************
+ SYSTEM SPEED TEST Version 4.78
+**********************************************************************
+
+
+1. LICENSE AGREEMENT.
+~~~~~~~~~~~~~~~~~~~~~~
+ SYSTEM SPEED TEST is FREEWARE, this signifies:
+
+ You are free to use, copy and distribute the SYSTEM SPEED TEST for
+ Noncommercial use if:
+
+ - No fee is charged for use, copying or distribution.
+ - It is not modified in any way.
+
+ The Author hereby disclaims all warranties relating to this software,
+ whether express or implied, including without limitation any implied
+ warranties of merchantability or fitness for a particular purpose. The
+ Author will not be liable for any special, incidental, consequential,
+ indirect or similar damages due to loss of data or any other reason,
+ even if the Author or an agent of the Author has been advised of
+ the possibility of such damages. The person using the software bears
+ all risk as to the quality and performance of the software.
+
+2. FILES IN THIS PACKAGE.
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+ SPEEDSYS.EXE - Test program.
+ SPEEDSYS.TXT - This text.
+ RUSSIAN.TXT  - Russian doc.
+ SPEEDSYS.HIS - History of SYSTEM SPEED TEST.
+ FILE_ID.DIZ  - Short description.
+
+3. FEATURES.
+~~~~~~~~~~~~~
+Test allows you to detect following parameters:
+
+ - Type of the processor.
+ - Clock rate of processor.
+ - Clock rate of processor via Time Stamp Counter.
+ - Some information of processor stepping.
+ - Size and speed index of memory.
+ - Type, manufacturer, part number,some features of DIMM/RIMM memory modules.
+ - Display adapter, size of video memory, video memory speeds index.
+ - Sizes and speed of data caches.
+ - Mainboard model.
+ - BIOS vendor and BIOS date.
+ - RTC-BIOS Year2000 bug.
+ - Processor benchmarks.
+ - Build a graph and define seek and access time of hard disk.
+ - Build a graph and define an average transfer speed of hard disk.
+ - Relative speed of hard disk.
+ - Testing of extended memory on errors and malfunction.
+ - Build a graph and define functioning of system a caching and memories.
+ - Test a quality of surface CD disk.
+ - Build a graph and define an average read speed of CD disk.
+ - Build a graph and define average time access of CD drive.
+ - Relative speed CD drive.
+ - PCI/AGP device information.
+ - ISA PnP device detection.
+ - Save image of screen with testing parameters in PCX file 640*480*16.
+
+4. SYSTEM REQUIREMENTS.
+~~~~~~~~~~~~~~~~~~~~~~~~
+ a) Processor 386+.
+ b) VGA-compatible videocard.
+ c) 4 MB free XMS memory.
+ d) DOS 5.00+.
+
+ Warning!  Test  should  not  work correctly in multitasking environment
+ such  as  Windows, WindowsNT, and other. Not recommended to use test
+ with memory menagers like EMM386 or QEMM and programs of caching data.
+
+ For testing IDE-ATAPI CD drives is recommended to create MS-DOS system
+ diskette and copy on it files: mscdex.sys, oakcdrom.sys or asuscd.sys
+ and config.sys following contents:
+
+ DEVICE=OAKCDROM.SYS /D:MSCD001
+ INSTALL=MSCDEX.EXE /D:MSCD001
+ or
+ DEVICE=ASUSCD.SYS /D:MSCD001 /DMA
+ INSTALL=MSCDEX.EXE /D:MSCD001
+ or
+ DEVICE=ASUSCD.SYS /D:MSCD001 /UDMA
+ INSTALL=MSCDEX.EXE /D:MSCD001
+
+ Load system from this diskette for properly testing.
+ You may will also be loaded from Windows'98 repair disk for testing
+ IDE or SCSI CD drives.
+
+5. COMMAND LINE PARAMETERS.
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+ SPEEDSYS [<HD[drive] or <CD[drive]>] [Tx] [SM] [SP] [PCX:file] [L]
+
+ drive - 0 or 1, 2, .., 7. Hard drive or CD drive (0 - by default).
+
+ HD[drive] - System tests and tests of hard disk.
+
+ SM - Skip test of caching system and memory.
+
+ SP - Skip PnP device detection.
+
+ CD[drive] - Test CD drive (disk).
+
+ L - Loop test of memory.
+
+ ? - Help.
+
+ T1 - Quick test HDD or CD drive ( by default).
+ For hard drive: Not full test of linear reading, quick testing of
+ seek and access time.
+ For CD drive: Tested last 37MB surfaces to the most often
+ subject to malfunctions.
+
+ T2 - Full tests of hard drive or CD drive.
+
+ [PCX:filename] - To create PCX image file of screen.
+ Created at the time of output from the program.
+
+Examples:
+ SPEEDSYS /CD /T2 /PCX:C:\BUFFER\mycdrom.pcx
+ SPEEDSYS hd1 pcx:mycomp
+ SPEEDSYS hd sm t2
+ SPEEDSYS hdt2sm
+
+Vladimir Afanasiev
+Home page: http://user.rol.ru/~dxover/speedsys
+E-mail   : dxover@email.ru
