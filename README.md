@@ -6,8 +6,10 @@ IIRC, it is a WIP version 4.79, while the latest binary release was v4.78. I do 
 **I** never made any progress improving SPEEDSYS and have no plans for the future. So, here it is!
 
 * [ASUSCD/](ASUSCD/) folder: ASUSTek CD/DVD-ROM Device Driver V1.50 (binary & readme)
-* [src/](src/) folder: SPEEDSYS sources (GNU GPL v2)
+* [src/](src/) folder: SPEEDSYS sources (GNU GPL any version)
 * [sstsources.zip](sstsources.zip) file: complete archive
+
+---
 
 > From: "Vladimir Afanasiev" <dxover@...>  
 > To: "Robert Riebisch" <rr@...>  
@@ -28,3 +30,18 @@ IIRC, it is a WIP version 4.79, while the latest binary release was v4.78. I do 
 > Regars.  
 >   
 > Vladimir Afanasiev  
+
+---
+
+>  From: "Vladimir Afanasiev" <dxover@...>  
+>  To: "Robert Riebisch" <rr@...>  
+>  Subject: Re: Future of System Speed Test  
+>  Date: Sun, 13 Aug 2006 12:15:24 +0900  
+>    
+>  > What license is the program now? I would assume "GNU GPL".   
+>    
+>  Yes, this acceptable.  
+>    
+>  Regards.  
+>    
+>  Vladimir Afanasiev  
